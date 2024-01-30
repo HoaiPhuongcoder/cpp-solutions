@@ -26,8 +26,10 @@ int main()
         i = n % 10;
        if(i == max)
            dem++;
-       if(i > max)
+       if(i > max){
            max = i;
+           dem = 0;
+       }
     }while(n /= 10);
     printf("\nSo lon nhat la %d", max);
     printf("\nSo luong chu so lon nhat la %d", dem);
